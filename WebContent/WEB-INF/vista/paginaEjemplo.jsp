@@ -12,7 +12,7 @@
 hola buenas tardes
 
 
-<a href="devuelveFormulario"> ir al form</a>
+<a href="alumno/muestraFormulario" > ir al formulario de registro pal alumno TAGS</a>
 
 </body>
 </html>

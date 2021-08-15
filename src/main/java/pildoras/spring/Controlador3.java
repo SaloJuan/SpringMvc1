@@ -1,31 +1,23 @@
 /*package pildoras.spring;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/principal")
-public class HolaAlumnosControlador 
-{
+@RequestMapping("/secundario")
+public class Controlador3 {
+	
 	@RequestMapping("/devuelveFormulario")
 	public String devuelveFormulario()
 	{
 		return "HolaAlumnosFormulario";
-	}
-	
-	@RequestMapping("/procesarFormulario")
-	public String procesarFormulario()
-	{
-		return "HolaAlumnosSpring";
-	}
+	}		
+		
 	
 	@RequestMapping("/procesarFormulario2")
-	//public String otroProcesoFormulario(HttpServletRequest request, Model model)
-	 public String otroProcesoFormulario(@RequestParam("nombreAlumno") 
+	public String otroProcesoFormulario(@RequestParam("nombreAlumno") 
 										String nombre, 
 										Model model)
 	{
@@ -33,7 +25,7 @@ public class HolaAlumnosControlador
 		
 		nombre += " es el mejor alumno";
 		
-		String mensajeFinal = "Quién es el mejor alumno? " + nombre;
+		String mensajeFinal = "Quién es el peor alumno? " + nombre;
 		
 		//agregarinfo al modelo
 				
@@ -42,4 +34,7 @@ public class HolaAlumnosControlador
 		return "HolaAlumnosSpring";
 		
 	}
+	
+	
+
 }*/
